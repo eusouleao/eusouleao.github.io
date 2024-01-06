@@ -2,118 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Eu Sou Leão</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Helvetica Neue', sans-serif;
-            background: url('https://miro.medium.com/v2/resize:fit:1080/1*CvcYsd99aclwoUb3sQL5qA.jpeg') center/cover no-repeat; /* Use a background image with gradient overlay */
-            color: #fff;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #000; /* Set background color to black */
+            background-color: #1a1a1a;
+            color: #fff;
         }
 
-        .image-section {
-            background-color: #000;
-            text-align: center;
-            padding: 20px;
+        /* Header Styles */
+        .header {
+            background-color: #292929;
+            padding: 100px 0;
         }
 
-        .image-section img {
-            max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        .header-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .header-subtitle {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .header-buttons {
             margin-top: 20px;
         }
 
-        header {
-            background-color: rgba(0, 0, 0, 0.75); /* Use a semi-transparent background for header */
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
+        /* Screenshot Section Styles */
+        .screenshot-section {
+            padding: 80px 0;
+            background-color: #333;
         }
 
-        header h1 {
-            font-size: 3em;
+        .screenshot-img {
+            max-width: 100%;
+            height: auto;
             margin-bottom: 20px;
-            font-weight: bold;
-            letter-spacing: 2px;
         }
 
-        .download-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-top: 60px;
-            margin-bottom: 80px;
-        }
-
-        .download-button {
-            background-color: rgb(0, 149, 131);
-            color: #fff;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: background-color 0.3s ease; /* Add a smooth transition effect */
-        }
-
-        .download-button:hover {
-            background-color: rgb(0, 120, 105); /* Darken the color on hover */
-        }
-        
-        span {
-        color: rgb(0, 149, 131);
-        }
-        
-        a {color: rgb(0, 149, 131);}
-        
-
-        footer {
-            background-color: #000; /* Use a semi-transparent background for footer */
-            text-color: #000;
-            padding: 0px 10px 150px 10px;
+        /* Footer Styles */
+        .footer {
+            background-color: #292929;
+            color: #ccc;
+            padding: 40px 0;
             margin-top: auto;
-            width: 100%;
         }
 
-        /* Additional Styles for Mobile */
-        @media only screen and (max-width: 600px) {
-            header {
-                padding: 30px 20px;
-            }
-
-            .download-button {
-                padding: 15px 20px;
-            }
+        .footer-text {
+            font-size: 16px;
         }
+
+        .btn-primary {
+            background-color: #269569;
+            border-color: #269569;
+        }
+
+        .btn-primary:hover {
+            background-color: #269569;
+            border-color: #269569;
+        }
+
+
     </style>
-    <title>Eu Sou Leão</title>
 </head>
 <body>
 
-    <header>
-        <img src="logo_app_top_trans.png" width="200px" alt="App Icon">
-        <h1>Eu <br>Sou<br> <span>Leão.<span></h1>
-        <p>Nova app disponível para Android e iOS.</p>
-        <div class="download-buttons">
-            <a href="#" class="download-button">Download para iOS</a>
-            <a href="#" class="download-button">Download para Android</a>
+<!-- Header Section -->
+<section class="header text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-5">
+                    <img src="img/logo.png" width="159">
+                </div>
+            </div>
         </div>
-    </header>
-
-    <div class="image-section">
-        <img width="300" src="app.png" alt="App Icon">
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="header-title">Eu Sou <span>Leão.</span></h1>
+                <p class="header-subtitle">
+                    As últimas notícias, artigos exclusivos, ratings de jogadores e muito mais.
+                </p>
+                <p>
+                    Já disponível para iOS e Android.
+                </p>
+                <div class="header-buttons">
+                    <button class="btn btn-primary btn-lg">Download Android</button>
+                    <button class="btn btn-secondary btn-lg ml-2">Download iOS</button>
+                </div>
+            </div>
+            <div class="col-md-12 mt-5">
+                <img src="img/ss1.png" width="250" alt="App Screenshot" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Eu Sou Leão.</p>
-        <p><a href="privacy-policy.html">Privacy policy<a></p>
-    </footer>
+<!-- Screenshot Section -->
+<section class="screenshot-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/ss3.png" width="100%" alt="Screenshot 1" class="screenshot-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer text-center">
+    <div class="container">
+        <p class="footer-text">&copy; 2024 Eu Sou Leão. All rights reserved. <a href="/privacy-policy.html">Política de privacidade.</p>
+    </div>
+</section>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
